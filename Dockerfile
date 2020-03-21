@@ -13,6 +13,10 @@ RUN yarn install
 
 COPY . .
 
+RUN yarn run build
+
 EXPOSE 4001
 
-CMD [ "yarn", "run", "start" ]
+ENV NODE_ENV=production
+
+CMD [ "yarn", "run", "serve" ]
