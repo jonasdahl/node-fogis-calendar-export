@@ -4,16 +4,23 @@ import gql from 'graphql-tag'
 import { GamesQuery } from './__types__/GamesQuery'
 import { print } from 'graphql/language/printer'
 import { gameToICalEvent } from '../helpers/gameToICalEvent'
-import { GRAPHQL_ENDPOINT } from '../constants'
 import { GraphQLClient } from 'graphql-request'
 import { authorization } from '../middleware/authorization'
+import bodyParser from 'body-parser'
+import { encrypt } from '../helpers/encryption'
+import { base64Encode } from '../helpers/hash'
+
+const GRAPHQL_ENDPOINT = process.env.GRAPHQL_ENDPOINT ?? 'http://localhost:4000'
 
 export function games() {
   const router = express.Router()
 
-  router.use(authorization)
+  console.log(
+    'Configured to access GraphQL Fogis endpoint with GRAPHQL_ENDPOINT=',
+    GRAPHQL_ENDPOINT,
+  )
 
-  router.get('/games', async (req, res) => {
+  router.get('/games', authorization, async (req, res) => {
     const { username, password } = req.principal!
 
     const client = new GraphQLClient(GRAPHQL_ENDPOINT, {

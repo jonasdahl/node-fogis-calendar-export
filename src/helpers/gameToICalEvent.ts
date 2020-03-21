@@ -2,7 +2,8 @@ import { Event } from '../iCalendar/types/Event'
 import { parse, addHours } from 'date-fns'
 import { formatReferee } from './formatReferee'
 import { Game } from '../types/Game'
-import { GRAPHQL_DATE_FORMAT } from '../constants'
+
+const GRAPHQL_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSSXXXX"
 
 export function gameToICalEvent(game: Game): Event {
   return {

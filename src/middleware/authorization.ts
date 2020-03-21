@@ -15,7 +15,6 @@ export function authorization(req: Request, res: unknown, next: () => void) {
   if (!decrypted) {
     throw new Error('Could not decrypt.')
   }
-  console.log(decrypted)
   const base64Decoded = base64Decode(decrypted)
   if (!base64Decoded) {
     throw new Error('Unable to decode string.')

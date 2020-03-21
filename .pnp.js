@@ -30,8 +30,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "fallbackPool": [
       [
+        "@types/body-parser",
+        "npm:1.19.0"
+      ],
+      [
         "@types/express",
         "npm:4.17.3"
+      ],
+      [
+        "@types/morgan",
+        "npm:1.9.0"
       ],
       [
         "@types/node",
@@ -40,6 +48,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [
         "@yarnpkg/pnpify",
         "virtual:3fd753fedcc72ea0e4e87bf14e1d04530c78f49138a8be68a13ae4d3f66e561796daaf18a8a7406b506f4f9f87455c00668ccf0c1790adb9b4e16ef034401143#npm:2.0.0-rc.19"
+      ],
+      [
+        "body-parser",
+        "npm:1.19.0"
       ],
       [
         "crypto",
@@ -66,6 +78,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:3fd753fedcc72ea0e4e87bf14e1d04530c78f49138a8be68a13ae4d3f66e561796daaf18a8a7406b506f4f9f87455c00668ccf0c1790adb9b4e16ef034401143#npm:2.10.3"
       ],
       [
+        "morgan",
+        "npm:1.10.0"
+      ],
+      [
         "nodemon",
         "npm:2.0.2"
       ],
@@ -85,15 +101,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@types/body-parser", "npm:1.19.0"],
             ["@types/express", "npm:4.17.3"],
+            ["@types/morgan", "npm:1.9.0"],
             ["@types/node", "npm:13.9.2"],
             ["@yarnpkg/pnpify", "virtual:3fd753fedcc72ea0e4e87bf14e1d04530c78f49138a8be68a13ae4d3f66e561796daaf18a8a7406b506f4f9f87455c00668ccf0c1790adb9b4e16ef034401143#npm:2.0.0-rc.19"],
+            ["body-parser", "npm:1.19.0"],
             ["crypto", "npm:1.0.1"],
             ["date-fns", "npm:2.11.0"],
             ["express", "npm:4.17.1"],
             ["graphql", "npm:14.6.0"],
             ["graphql-request", "npm:1.8.2"],
             ["graphql-tag", "virtual:3fd753fedcc72ea0e4e87bf14e1d04530c78f49138a8be68a13ae4d3f66e561796daaf18a8a7406b506f4f9f87455c00668ccf0c1790adb9b4e16ef034401143#npm:2.10.3"],
+            ["morgan", "npm:1.10.0"],
             ["nodemon", "npm:2.0.2"],
             ["ts-node", "virtual:3fd753fedcc72ea0e4e87bf14e1d04530c78f49138a8be68a13ae4d3f66e561796daaf18a8a7406b506f4f9f87455c00668ccf0c1790adb9b4e16ef034401143#npm:8.7.0"],
             ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=270b6c"]
@@ -168,6 +188,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-mime-npm-2.0.1-1018885da5-2.zip/node_modules/@types/mime/",
           "packageDependencies": [
             ["@types/mime", "npm:2.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/morgan", [
+        ["npm:1.9.0", {
+          "packageLocation": "./.yarn/cache/@types-morgan-npm-1.9.0-4a084e8671-2.zip/node_modules/@types/morgan/",
+          "packageDependencies": [
+            ["@types/morgan", "npm:1.9.0"],
+            ["@types/express", "npm:4.17.3"]
           ],
           "linkType": "HARD",
         }]
@@ -418,6 +448,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/balanced-match-npm-1.0.0-951a2ad706-2.zip/node_modules/balanced-match/",
           "packageDependencies": [
             ["balanced-match", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["basic-auth", [
+        ["npm:2.0.1", {
+          "packageLocation": "./.yarn/cache/basic-auth-npm-2.0.1-f1627ef330-2.zip/node_modules/basic-auth/",
+          "packageDependencies": [
+            ["basic-auth", "npm:2.0.1"],
+            ["safe-buffer", "npm:5.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -894,6 +934,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["depd", "npm:1.1.2"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/depd-npm-2.0.0-b6c51a4b43-2.zip/node_modules/depd/",
+          "packageDependencies": [
+            ["depd", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["destroy", [
@@ -1129,15 +1176,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["fogis-calendar-export", "workspace:."],
+            ["@types/body-parser", "npm:1.19.0"],
             ["@types/express", "npm:4.17.3"],
+            ["@types/morgan", "npm:1.9.0"],
             ["@types/node", "npm:13.9.2"],
             ["@yarnpkg/pnpify", "virtual:3fd753fedcc72ea0e4e87bf14e1d04530c78f49138a8be68a13ae4d3f66e561796daaf18a8a7406b506f4f9f87455c00668ccf0c1790adb9b4e16ef034401143#npm:2.0.0-rc.19"],
+            ["body-parser", "npm:1.19.0"],
             ["crypto", "npm:1.0.1"],
             ["date-fns", "npm:2.11.0"],
             ["express", "npm:4.17.1"],
             ["graphql", "npm:14.6.0"],
             ["graphql-request", "npm:1.8.2"],
             ["graphql-tag", "virtual:3fd753fedcc72ea0e4e87bf14e1d04530c78f49138a8be68a13ae4d3f66e561796daaf18a8a7406b506f4f9f87455c00668ccf0c1790adb9b4e16ef034401143#npm:2.10.3"],
+            ["morgan", "npm:1.10.0"],
             ["nodemon", "npm:2.0.2"],
             ["ts-node", "virtual:3fd753fedcc72ea0e4e87bf14e1d04530c78f49138a8be68a13ae4d3f66e561796daaf18a8a7406b506f4f9f87455c00668ccf0c1790adb9b4e16ef034401143#npm:8.7.0"],
             ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=270b6c"]
@@ -1899,6 +1950,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["morgan", [
+        ["npm:1.10.0", {
+          "packageLocation": "./.yarn/cache/morgan-npm-1.10.0-a0da109b6b-2.zip/node_modules/morgan/",
+          "packageDependencies": [
+            ["morgan", "npm:1.10.0"],
+            ["basic-auth", "npm:2.0.1"],
+            ["debug", "virtual:6e177cabfad012f413f9c41366539c04d8701f0567119998690ab02224012faa99ec3a16b9f74f4d7920ab472c12b3e70f47f8f143239c06d0e2569e60ed9f62#npm:2.6.9"],
+            ["depd", "npm:2.0.0"],
+            ["on-finished", "npm:2.3.0"],
+            ["on-headers", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["ms", [
         ["npm:2.0.0", {
           "packageLocation": "./.yarn/cache/ms-npm-2.0.0-9e1101a471-2.zip/node_modules/ms/",
@@ -2072,6 +2137,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["on-finished", "npm:2.3.0"],
             ["ee-first", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["on-headers", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/on-headers-npm-1.0.2-e7cd3ea25e-2.zip/node_modules/on-headers/",
+          "packageDependencies": [
+            ["on-headers", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
